@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -21,29 +21,10 @@
                 font-family: 'Lobster Two', sans-serif;
                 ">Fresh-qrmenu</h1>
             </div>
-            <script>
-                // ID'si "elma" olan öğeyi seç
-                var elmaElement = document.getElementById("elma");
-        
-                // Öğeye tıklama olayını ekle
-                elmaElement.addEventListener("click", function () {
-                    // Mevcut sınıfı kaldır
-                    elmaElement.classList.remove("fa-bars-staggered");
-                    elmaElement.classList.remove("fa-circle-xmark");
-        
-                    // Yeni sınıfı ekle
-                    elmaElement.classList.add("fa-circle-xmark");
-        
-                    // Bir süre sonra eski sınıfa geri dön
-                    setTimeout(function() {
-                        elmaElement.classList.remove("fa-circle-xmark");
-                        elmaElement.classList.add("fa-bars-staggered");
-                    }, 1000); // 1000 milisaniye (1 saniye) sonra
-                });
-            </script>
 
 
-            <a id="bar" class="flex md:hidden"> <i id="elma" class="fa-solid fa-bars-staggered text-xl bg-gray-900 rounded p-3 text-white cursor-pointer"></i></a>
+            <a id="bar" class="flex md:hidden"> <i id="elma"
+                    class="fa-solid fa-bars-staggered text-xl bg-gray-900 rounded p-3 text-white cursor-pointer"></i></a>
 
             <div id="sal"
                 class="flex gap-3 justify-center md:flex-row flex-col items-center md:flex md:relative absolute md:top-0  left-0  top-20 md:w-auto w-full md:p-0 p-4 md:h-auto h-screen hidden">
@@ -51,17 +32,18 @@
 
                 <div class="flex md:flex-row flex-col gap-3">
                     <li><a class="bg-white hover:bg-gray-900 hover:text-white rounded py-3 px-10 m:pl-0 pl-4 text-xl md:text-m  md:px-5 shadow font-bold block w-full"
-                            href="#"><i class="fa-solid fa-qrcode"></i> QR Menu</a></li>
+                            href="index.html"><i class="fa-solid fa-qrcode"></i> QR Menu Demo</a></li>
                     <li><a class="bg-white hover:bg-gray-900 hover:text-white rounded py-3 px-10 m:pl-0 pl-4 text-xl md:text-m  md:px-5 shadow font-bold block w-full"
-                            href="#"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                            href="./about"><i class="fa-solid fa-circle-info"></i> About</a></li>
                     <li><a class="bg-white hover:bg-gray-900 hover:text-white rounded py-3 px-10 m:pl-0 pl-4 text-xl md:text-m  md:px-5 shadow font-bold block w-full"
-                            href="#"><i class="fa-solid fa-file-contract"></i> Agreement</a></li>
+                            href="./agreement"><i class="fa-solid fa-file-contract"></i> Agreement</a></li>
                 </div>
 
 
 
                 <li id="joy" class="joy mx-3 mt-5 md:mt-0"><a id="sa"
-                        class="text-gray-50 font-bold flex justify-center items-center py-2 px-5 md:text-m text-xl rounded-full shadow hover:shadow-lg" href="#">Contact</a></li>
+                        class="text-gray-50 font-bold flex justify-center items-center py-2 px-5 md:text-m text-xl rounded-full shadow hover:shadow-lg"
+                        href="#content">Contact</a></li>
                 <div id="selam" class="md:relative flex gap-3 ">
                     <li><a class="bg-gray-900 text-white hover:bg-green-500 hover:text-white rounded-full py-2 px-3 mb-2 shadow font-bold"
                             href="#"><i class="fa-brands fa-whatsapp text-2xl"></i></a></li>
@@ -76,67 +58,589 @@
 
 
 
-    <article class="">
-        <div class="flex justify-center kaspa relative bg-cover bg-center bg-no-repeat"
-            style="height: 90vh; background-image: url(https://i.hizliresim.com/jo88c9t.jpg);">
+    <article>
+        <div id="selx" class="flex justify-center kaspa relative bg-cover bg-center bg-no-repeat" style="height: 90vh;">
             <h1 id="ana-baslik"
-                class="animate__animated animate__backInLeft absolute top-7 md:top-14 py-4 left-6 md:left-10 text-4xl md:text-6xl font-bold text-blue-800 tracking-wide">
-                <span class="text-gray-900 tracking-widest">QR</span> <span>Fast</span> <span>Easy</span>
-                <span>Simple</span>
+                class="animate__animated animate__backInLeft absolute top-7 md:top-14 py-4 left-6 md:left-10 text-4xl md:text-7xl font-bold text-blue-800 tracking-wide">
+                <span class="text-gray-900 tracking-widest">QR</span> <span>Menu</span> <span>Organization</span>
             </h1>
-            <a class="p-4 absolute bottom-20 rounded-lg text-gray-900 shadow px-5 text-xl absolute" href="#"
-                id="lets"><span style="font-weight: 800;">Let's QR</span></a>
+            <h2 id="sxz"
+                class="text-gray-50 font-bold md:text-4xl text-xl pl-4 absolute left-2 md:left-5 bottom-40 md:bottom-48 md:w-10/12">
+                Digitalize your business, achieve success!
+                Instantly update your menu and discover the potential of your business with our QR Menu Management Site.
+            </h2>
+            <a class="p-3 px-10 absolute bottom-20 md:left-14 left-2 rounded-lg text-gray-900 shadow px-5 text-xl"
+                href="https://wa.me/+447417402908?text=Hello%20" id="lets"><span style="font-weight: 800;">Let's
+                    QR</span></a>
         </div>
+
+        <div class="bg-gray-900 flex items-center justify-center py-20">
+            <div class="flex md:flex-row flex-col gap-16 items-center justify-center p-2">
+                <div id="packet-1"
+                    class="wow animate__animated animate__fadeInLeft relative bg-gray-800 text-white p-4 rounded shadow-2xl flex flex-col gap-4">
+                    <h1 id="sponsor"
+                        class="wow animate__animated animate__fadeInUp animate__delay-1s text-3xl md:text-4xl font-bold text-center py-3">
+                        Normal</h1>
+                    <div>
+                        <ul class="flex flex-col gap-4">
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Responsive Design (Mobile
+                                Compatible)
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Your one-time payment
+                                is sufficient.
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-xmark text-red-600"></i></span>Open source
+                                will be given, you can change or update it.
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-xmark text-red-600"></i></span>In unlimited domains
+                                you can use
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Content is an example,
+                                please
+                                don't get hung up on them.
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Add Unlimited Pages
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Adding Unlimited Services
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-xmark text-red-600"></i></span>Adding Code on Special
+                                Request
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Unlimited Color Selection
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Unlimited Customer Reviews
+                                Joint
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-xmark text-red-600"></i></span>Adding Image (Max 25MB
+                                can be added)
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Add Unlimited FAQ
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Language Management
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Adding 2 Phones
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Adding 2 Emails
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Adding 2 Addresses
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Adding 1 Google Maps
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Our 24/7 Technical Support
+                                Available.
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>1 Adding Whatsapp
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#"
+                        class="wow animate__animated animate__fadeInUp animate__delay-1s hover:bg-yellow-500 button bg-blue-500 relative top-10 rounded-lg p-3 shadow-2xl text-center text-2xl font-bold">15$</a>
+                </div>
+                <div id="packet-1"
+                    class="wow animate__animated animate__fadeInRight relative bg-gray-800 text-white p-4 rounded shadow-2xl flex flex-col gap-4">
+                    <h1 id="musteri-baslik"
+                        class="wow animate__animated animate__fadeInUp animate__delay-1s text-3xl md:text-4xl font-bold text-center py-3">
+                        Premium +</h1>
+                    <div>
+                        <ul class="flex flex-col gap-4">
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Responsive Design (Mobile
+                                Compatible)
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Your one-time payment
+                                is sufficient.
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Open source
+                                will be given, you can change or update it.
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>In unlimited domains
+                                you can use
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Content is an example,
+                                please
+                                don't get hung up on them.
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Add Unlimited Pages
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Adding Unlimited Services
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Adding Code on Special
+                                Request
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Unlimited Color Selection
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Unlimited Customer Reviews
+                                Joint
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Adding Image (Max 25MB
+                                can be added)
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Add Unlimited FAQ
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Language Management
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Adding 2 Phones
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Adding 2 Emails
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Adding 2 Addresses
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Adding 1 Google Maps
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>Our 24/7 Technical Support
+                                Available.
+                            </li>
+                            <li
+                                class="wow animate__animated animate__fadeInUp animate__delay-1s flex items-center gap-1 hover:text-green-600 cursor-pointer">
+                                <span><i class="fa-solid fa-check text-green-600"></i></span>1 Adding Whatsapp
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="#"
+                        class="wow animate__animated animate__fadeInUp animate__delay-1s hover:bg-yellow-500 button bg-blue-500 relative top-10 rounded-lg p-3 shadow-2xl text-center text-2xl font-bold">25$</a>
+                </div>
+
+            </div>
+        </div>
+
         <div class="bg-gray-900 px-4 py-10 flex flex-wrap justify-center items-center gap-20"
             style="min-height: 100vh;">
             <div id="box" class="flex rounded shadow bg-gray-300 mt-10 md:mt-0">
                 <img class="relative bottom-10 h-24 mx-auto p-3 rounded-xl shadow"
                     src="https://i.hizliresim.com/ejm26x8.jpg" alt="">
-                <h1 class="text-center font-bold text-2xl text-red-600">Avantajları</h1>
+                <h1 class="text-center font-bold text-2xl text-green-600">Advantages</h1>
                 <div class="mt-3 p-2">
                     <ul id="list" class="flex flex-col gap-1">
-                        <li class="flex items-center gap-1"><span></span> Hijyen ve Güvenlik</li>
-                        <li class="flex items-center gap-1"><span></span> Anında Erişim ve Kolay Kullanım</li>
-                        <li class="flex items-center gap-1"><span></span> Güncellenebilir ve Esnek Menüler</li>
-                        <li class="flex items-center gap-1"><span></span> Müşteri Geri Bildirimi İçin İdeal Platform</li>
-                        <li class="flex items-center gap-1"><span></span> Çevre Dostu ve Tasarruflu</li>
+                        <li class="flex items-center gap-1"><span></span> Hygiene and Safety</li>
+                        <li class="flex items-center gap-1"><span></span> Instant Access and Easy Use</li>
+                        <li class="flex items-center gap-1"><span></span> Updatable and Flexible Menus</li>
+                        <li class="flex items-center gap-1"><span></span> Ideal Platform for Customer Feedback
+                        </li>
+                        <li class="flex items-center gap-1"><span></span> Environmentally Friendly and Economical</li>
                     </ul>
                 </div>
             </div>
             <div id="box" class="flex rounded shadow bg-gray-300">
                 <img class="relative bottom-10 h-24 mx-auto p-3 rounded-xl shadow"
                     src="https://i.hizliresim.com/ch17jpn.jpg" alt="">
-                <h1 class="text-center font-bold text-2xl text-green-500">Eski Menülerle <br> Uğraşmayın.</h1>
+                <h1 class="text-center font-bold text-2xl text-green-500">Don't Mess with Old Menus <br></h1>
                 <div class="mt-3 p-2 px-2">
                     <ul id="bist" class="flex flex-col gap-1">
-                        <li class="flex items-center gap-1"><span></span>Çevre Dostu</li>
-                        <li class="flex items-center gap-1"><span></span>Hızlı Sipariş</li>
-                        <li class="flex items-center gap-1"><span></span>Hijyen</li>
-                        <li class="flex items-center gap-1"><span></span>Güncellenebilir Menü</li>
-                        <li class="flex items-center gap-1"><span></span>Geri Bildirim</li>
-                        <li class="flex items-center gap-1"><span></span>Kampanya Bildirimi</li>
+                        <li class="flex items-center gap-1"><span></span>Eco-Friendly</li>
+                        <li class="flex items-center gap-1"><span></span>Quick Order</li>
+                        <li class="flex items-center gap-1"><span></span>Hygiene</li>
+                        <li class="flex items-center gap-1"><span></span>Updatable Menu</li>
+                        <li class="flex items-center gap-1"><span></span>Feedback</li>
+                        <li class="flex items-center gap-1"><span></span>Campaign Notification</li>
                     </ul>
                 </div>
             </div>
             <div id="box" class="flex rounded shadow bg-gray-300">
                 <img class="relative bottom-10 h-24 mx-auto p-3 rounded-xl shadow"
                     src="https://i.hizliresim.com/8n8muhz.jpg" alt="">
-                <h1 class="text-center font-bold text-2xl text-blue-500">İletişim</h1>
+                <h1 class="text-center font-bold text-2xl text-blue-500">Contact</h1>
                 <div class="mt-10 p-2 px-2">
-                    <h1 id="list" class="text-center font-bold text-2xl text-blue-500">7/24 Destek hattımızdan bize
-                        ulaşabilirsiniz.</h1>
+                    <h1 id="list" class="text-center font-bold text-2xl text-blue-500">Contact us via our 24/7 Support
+                        line.
+                        You can reach.</h1>
                     <a id="list"
-                        class="mt-10 text-white rounded-full text-center  block bg-green-500 p-3 text-lg md:text-xl font-bold hover:text-green-500 hover:bg-gray-100 shadoow-xl"
-                        href="#">Whatsapdan yaz <i class="fa-brands fa-whatsapp"></i></a>
+                        class="mt-10 text-white rounded-full text-center block bg-green-500 p-3 text-lg md:text-xl font-bold hover:text-green-500 hover:bg-gray-100 shadoow -xl"
+                        href="https://wa.me/+447417402908?text=Hello%20">WhatsApp <i
+                            class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
-        <div class="bg-gray-900 pb-20 flex items-center justify-center flex-col">
-            <a id="basla"
-                class="mt-10 md:mt-0 text-green-500 font-bold text-2xl md:text-4xl text-center mx-auto bg-green-100 px-7 py-5 rounded shadow-xl hover:bg-green-500 hover:text-green-100"
-                href="#">Let's Go<i class="fa-solid fa-angles-right"></i></a>
+
+        <div class="bg-gray-200 py-20">
+            <h1 class="text-5xl px-1 text-center wow animate__animated animate__flipInX animate__delay">How logical is it to
+                make a QR menu <i style="text-shadow: 1px 1px black; transform: rotate(12deg);"
+                    class="fa-solid fa-question text-red-600"></i></h1>
+            <section class="md:w-4/12 md:px-0 px-5 container text-xl mx-auto mt-10 flex flex-col gap-10">
+                <h2 class="text-3xl font-bold text-center wow animate__animated animate__flipInX animate__delay">
+                    Advantages</h2>
+                <ul class="flex flex-col gap-4">
+                    <li class="wow animate__animated animate__fadeInUp animate__delay-1s">Digital Asset Creation</li>
+                    <li class="wow animate__animated animate__fadeInUp animate__delay-1s">Professional Appearance</li>
+                    <li class="wow animate__animated animate__fadeInUp animate__delay-1s">Market Expansion</li>
+                    <li class="wow animate__animated animate__fadeInUp animate__delay-1s">QR Menu Ease</li>
+                    <li class="wow animate__animated animate__fadeInUp animate__delay-1s">Advertising and Marketing</li>
+                    <li class="wow animate__animated animate__fadeInUp animate__delay-1s">Mobile Compatible</li>
+                    <li class="wow animate__animated animate__fadeInUp animate__delay-1s">Trust and Transparency</li>
+                    <li class="wow animate__animated animate__fadeInUp animate__delay-1s">Customer Contact</li>
+                    <li class="wow animate__animated animate__fadeInUp animate__delay-1s">Competing with Competitors
+                    </li>
+                    <li class="wow animate__animated animate__fadeInUp animate__delay-1s">Current and Flexible
+                        Information</li>
+                </ul>
+            </section>
         </div>
 
+        <div class="bg-gray-800 py-20 p-4 md:pl-52 md:pb-40">
+            <h1 class="font-bold text-4xl" id="sponsor">Our Sponsors</h1>
+            <div>
+                <h2 class="mt-4 text-white">We do not have any sponsors at the moment.</h2>
+            </div>
+            <div id="slider" class="flex gap-10 py-5 overflow-x-scroll hidden">
+                <img class="bg-cover bg-center h-52 rounded-xl mx-2"
+                    src="https://images.unsplash.com/photo-1682686581220-689c34afb6ef?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <img class="bg-cover bg-center h-52 rounded-xl mx-2"
+                    src="https://images.unsplash.com/photo-1682686581220-689c34afb6ef?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <img class="bg-cover bg-center h-52 rounded-xl mx-2"
+                    src="https://images.unsplash.com/photo-1682686581220-689c34afb6ef?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <img class="bg-cover bg-center h-52 rounded-xl mx-2"
+                    src="https://images.unsplash.com/photo-1682686581220-689c34afb6ef?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <img class="bg-cover bg-center h-52 rounded-xl mx-2"
+                    src="https://images.unsplash.com/photo-1682686581220-689c34afb6ef?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <img class="bg-cover bg-center h-52 rounded-xl mx-2"
+                    src="https://images.unsplash.com/photo-1682686581220-689c34afb6ef?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+            </div>
+        </div>
+
+        <div id="musteri" class="bg-gray-800 pb-20 flex flex-wrap gap-2 items-center justify-center flex-col">
+            <h1 class="wow animate__animated animate__zoomIn animate__delay font-bold text-green-500 text-4xl pb-5 px-5"
+                id="musteri-baslik">Opinions of Our Customers
+            </h1>
+
+
+            <div class="text-white md:px-20 px-7">
+                <h2>There are no customer comments at the moment.</h2>
+                <h1>Comment now!</h1>
+            </div>
+
+
+            <div class="flex items-center justify-center bg-g">
+                <form class="md:w-96 container flex flex-col justify-center items-center mt-10" id="form-1"
+                    name="survey-form" accept-charset="utf-8" action="" method="post">
+                    <h1 class="text-white font-bold text-3xl py-2 pt-5">Leave Your Comment</h1>
+                    <fieldset id="fs-frm-inputs" class="py-4 md:py-4 md:w-96 w-72 flex flex-col gap-3">
+                        <input type="text" name="name" id="full-name" placeholder="Your business name?" required="">
+                        <input type="email" name="_replyto" id="email-address" placeholder="Email@example.com"
+                            required="">
+                        <fieldset id="fs-frm-selects">
+                            <select name="timely" id="timely" required="">
+                                <option value="" selected="" disabled="">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">⭐️</font>
+                                    </font>
+                                </option>
+                                <option value="1">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">⭐️</font>
+                                    </font>
+                                </option>
+                                <option value="3">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">⭐️⭐️</font>
+                                    </font>
+                                </option>
+                                <option value="5">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">⭐️⭐️⭐️</font>
+                                    </font>
+                                </option>
+                                <option value="7">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">⭐️⭐️⭐️⭐️</font>
+                                    </font>
+                                </option>
+                                <option value="9">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">⭐️⭐️⭐️⭐️⭐️</font>
+                                    </font>
+                                </option>
+                            </select>
+                        </fieldset>
+                        <textarea rows="3" name="message" id="message" placeholder="Your comment."
+                            required=""></textarea>
+                        <input type="hidden" name="_subject" id="email-subject" value="Survey Responses">
+                    </fieldset>
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;"><input
+                                class="bg-red-500 py-2 px-5 rounded text-white font-bold text-lg hover:bg-green-500"
+                                type="submit" value="Submit"></font>
+                    </font>
+                </form>
+            </div>
+
+
+            <div class="hidden flex gap-3 flex-wrap justify-center items-center w-12/12">
+                <div id="boxs" class="md:w-3/12 w-11/12 h-32 bg-gray-900 flex items-center pl-3 rounded gap-3">
+                    <img class="h-20 w-20 rounded-full"
+                        src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="yorum text-white text-lg">
+                        ipsum dolor suuntur assumendat! Quo.
+                        <br>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div id="boxs" class="md:w-3/12 w-11/12 h-32 bg-gray-900 flex items-center pl-3 rounded gap-3">
+                    <img class="h-20 w-20 rounded-full"
+                        src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="yorum text-white text-lg">
+                        ipsum dolor suuntur assumendat! Quo.
+                        <br>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <div id="boxs" class="md:w-3/12 w-11/12 h-32 bg-gray-900 flex items-center pl-3 rounded gap-3">
+                    <img class="h-20 w-20 rounded-full"
+                        src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="yorum text-white text-lg">
+                        ipsum dolor suuntur assumendat! Quo.
+                        <br>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star text-yellow-500"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="py-20 px-5 flex flex-col gap-4" style="background-color: #5f27cd; min-height: 100vh;">
+            <h1 class="text-8xl font-bold text-white">FAQ</h1>
+            <div id="faq" class="md:px-0 flex flex-wrap justify-center items-center gap-3">
+                <div class="md:w-3/12 wow animate__animated animate__backInLeft animate__delay">
+                    <img class="h-80" id="faq-img" src="https://i.hizliresim.com/ruv8n3p.png" alt="">
+                </div>
+                <div class="text-white md:w-5/12 wow animate__animated animate__backInRight animate__delay">
+                    <div class="text-xl flex flex-col leading-8 mt-6">
+                        <span class="text-4xl font-bold">Hi!</span>
+                        As QR Menu Company, we help digitalize your restaurants.
+                        Your customers,
+                        table
+                        They can instantly access your menu by scanning the QR code on it. A fast, practical and
+                        hygienic
+                        experience
+                        We offer. Invite your business with our QR menus for orders, payments and more.
+                        modernize.
+                        Flavor
+                        We are here for full moments!
+                        <br>
+                        We wish you pleasant days! 🍽️📱
+                    </div>
+                </div>
+            </div>
+            <div class="container md:w-8/12 mx-auto">
+                <h2 class="text-4xl font-bold text-white">FAQ</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button id="accordion-button-1" aria-expanded="false"><span
+                                class="accordion-title font-bold">Why
+                                isduring the day?</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit ame potenti.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false"><span
+                                class="accordion-title font-bold">Why is
+                                the sky
+                                blue?</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna anti.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false"><span
+                                class="accordion-title font-bold">Why is
+                                the sky
+                                blue?</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna anti.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false"><span
+                                class="accordion-title font-bold">Why is
+                                the sky
+                                blue?</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna anti.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="content" class="bg-gray-100 bg-cover bg-center "
+        style="background-image: url(https://i.hizliresim.com/r8emfmv.jpg);">
+        <div class="container mx-auto md:py-20 py-1">
+            <div class="md:w-3/4 w-full mx-auto rounded-xl shadoow-2xl my-5" style="backdrop-filter: blur(17px);
+            background-color: rgba(19, 19, 19, 0.64);">
+                <h1
+                    class="wow animate__animated animate__fadeInUp animate__delay text-center font-bold text-6xl pt-10 pb-3 text-white">
+                    <span id="spa">Let us reach you</span>
+                </h1>
+                <form id="fs-frm" class="pb-10 flex flex-col items-center" name="complaint-form"
+                    accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+                    <fieldset id="fs-frm-inputs" class="flex flex-col gap-2 container md:w-6/12 mx-auto px-3 py-5">
+                        <label for="full-name">
+                            <font style="vertical-align: inherit;">
+                                <font class="wow animate__animated animate__fadeInUp animate__delay"
+                                    style="vertical-align: inherit;">Name Surname</font>
+                            </font>
+                        </label>
+                        <input type="text" name="name" id="full-name" placeholder="Name Surname" required="">
+                        <label for="email-address">
+                            <font style="vertical-align: inherit;">
+                                <font class="wow animate__animated animate__fadeInUp animate__delay"
+                                    style="vertical-align: inherit;">Email Address</font>
+                            </font>
+                        </label>
+                        <input type="email" name="_replyto" id="email-address" placeholder="Email@example.com"
+                            required="">
+                        <label for="telephone">
+                            <font style="vertical-align: inherit;">
+                                <font class="wow animate__animated animate__fadeInUp animate__delay"
+                                    style="vertical-align: inherit;">Phone Number (Optional)</font>
+                            </font>
+                        </label>
+                        <input type="telephone" name="telephone" id="telephone" placeholder="(555) 555-5555">
+                        <label for="complaint">
+                            <font style="vertical-align: inherit;">
+                                <font class="wow animate__animated animate__fadeInUp animate__delay"
+                                    style="vertical-align: inherit;">Tell Us About Your Business</font>
+                            </font>
+                        </label>
+                        <textarea rows="6" name="complaint" id="complaint" placeholder="" required=""></textarea>
+                        <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+                    </fieldset>
+                    <font class="w-4/12 py-5" style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;"><input type="submit" id="submit"
+                                class="wow animate__animated animate__fadeInUp animate__delay font-bold text-xl text-white shadow-xl"
+                                value="Send"></font>
+                    </font>
+                </form>
+            </div>
+        </div>
+    </div>
     </article>
 
 
@@ -148,8 +652,7 @@
 
 
 
-
-    <footer>
+    <div class="whatsapp">
         <a href="https://muhammetkirmizikoc.com/"
             class="tooltip-container fixed bottom-5 right-5 md:bottom-10 md:right-10 rounded-full"
             style="backdrop-filter: blur(20px);">
@@ -160,186 +663,219 @@
                     <g id="caractere_x5F_1">
                         <g>
                             <path id="right_x5F_hair" class="st1" d="M199,87.1c-0.9-2.6-1.2-5.3-1.2-8.2c0.2,0.4,0.3,0.8,0.5,1.1c1.4,3.1,2.9,5.8,4.4,8
-				c-1.2-2.8-2.6-6.9-3.2-12.1c-0.4-4.6,0-8.5,0.5-11.3c2.2-10.3,4.6-21.2-1.6-31.5c-10.9-18.3-33.6-8.4-33.6-8.4L151,110.2
-				c0,0,17.8,28.2,42,18.3C217.2,118.7,204.4,102.4,199,87.1z"></path>
+        c-1.2-2.8-2.6-6.9-3.2-12.1c-0.4-4.6,0-8.5,0.5-11.3c2.2-10.3,4.6-21.2-1.6-31.5c-10.9-18.3-33.6-8.4-33.6-8.4L151,110.2
+        c0,0,17.8,28.2,42,18.3C217.2,118.7,204.4,102.4,199,87.1z"></path>
                             <g id="neck_2_">
                                 <path id="neck_x5F_and_x5F_shoulder" class="st2" d="M175.4,146.4c-12.7,2.3-56.5-13-69.2-11c-1.1-8.3,6.2-16.7,9.8-19.2
-					c10-6.9,28,4.2,27.3-17.8c-0.8-22.9-1.6-28.3-1.6-28.3l26.2,17.5c0,0-5.6,8.1,0,19.7c5.2,10.6,23-2,29.8,11
-					C180.1,123.5,193.3,143.2,175.4,146.4z"></path>
+            c10-6.9,28,4.2,27.3-17.8c-0.8-22.9-1.6-28.3-1.6-28.3l26.2,17.5c0,0-5.6,8.1,0,19.7c5.2,10.6,23-2,29.8,11
+            C180.1,123.5,193.3,143.2,175.4,146.4z"></path>
                                 <path id="shadow_x5F_head" class="st3" d="M166.8,104.9c-10.9,1.5-20.9-4.5-23.9-14.5c-0.7-16.2-1.2-20.4-1.2-20.4l26.2,17.5
-					C167.8,87.6,163,94.6,166.8,104.9z"></path>
+            C167.8,87.6,163,94.6,166.8,104.9z"></path>
                             </g>
                             <g id="face">
                                 <path id="face_4_" class="st2" d="M188.2,78c-0.5,4.5-2.8,7.9-4,9.8c-1.1,1.7-1,1.1-5.4,6.3c-3.8,4.5-4,5-5.2,5.5
-					c-1.5,0.6-3.7,0.6-10.4-3.1c-4.9-2.7-8-4.4-11.8-8c-4.2-3.9-11.5-10.6-13.8-21.6c-0.9-4.2-3.3-16.1,23.3-31.2
-					c0,0,10.4-4.1,18.5,1.2c7.5,5,8.5,14.4,8.7,16.2c0.6,6.2-1.8,8.2-1.1,15.2c0.1,0.5,0.1,1,0.2,1.6l0,0
-					C187.8,73.4,188.6,74.8,188.2,78z"></path>
+            c-1.5,0.6-3.7,0.6-10.4-3.1c-4.9-2.7-8-4.4-11.8-8c-4.2-3.9-11.5-10.6-13.8-21.6c-0.9-4.2-3.3-16.1,23.3-31.2
+            c0,0,10.4-4.1,18.5,1.2c7.5,5,8.5,14.4,8.7,16.2c0.6,6.2-1.8,8.2-1.1,15.2c0.1,0.5,0.1,1,0.2,1.6l0,0
+            C187.8,73.4,188.6,74.8,188.2,78z"></path>
                                 <g>
                                     <g id="nose">
-                                        <path class="st4" d="M176.7,63.3c0.9,1.9,1.6,3.8,2.4,5.5c0.4,0.9,0.9,1.8,1.3,2.5c0.5,0.8,1.1,1.5,1.8,1.8l1.3,0.6l-1.2,0.6
-							c-1.1,0.5-2.1,1-3.2,1.4c-1.1,0.4-2.2,0.8-3.4,0.9c0.5-0.2,1.1-0.5,1.6-0.8s1-0.6,1.5-0.9c1-0.6,2-1.2,2.9-1.8l0.1,1.2
-							c-1.2-0.4-2-1.3-2.6-2.2c-0.6-0.9-1.1-1.9-1.4-2.9c-0.4-1-0.6-2-0.8-3C176.7,65.4,176.6,64.4,176.7,63.3z"></path>
+                                        <path class="st4"
+                                            d="M176.7,63.3c0.9,1.9,1.6,3.8,2.4,5.5c0.4,0.9,0.9,1.8,1.3,2.5c0.5,0.8,1.1,1.5,1.8,1.8l1.3,0.6l-1.2,0.6
+                    c-1.1,0.5-2.1,1-3.2,1.4c-1.1,0.4-2.2,0.8-3.4,0.9c0.5-0.2,1.1-0.5,1.6-0.8s1-0.6,1.5-0.9c1-0.6,2-1.2,2.9-1.8l0.1,1.2
+                    c-1.2-0.4-2-1.3-2.6-2.2c-0.6-0.9-1.1-1.9-1.4-2.9c-0.4-1-0.6-2-0.8-3C176.7,65.4,176.6,64.4,176.7,63.3z"></path>
                                     </g>
                                     <g id="left_x5F_eyebrow">
                                         <path class="st5" d="M153.1,55.8c0.3-0.7,0.8-1.4,1.3-2s1.1-1.1,1.8-1.6c1.3-0.9,3-1.5,4.7-1.6c1.8-0.1,3.6,0.5,4.9,1.5
-							c1.4,1,2.4,2.4,2.6,4.1c-1.5-0.7-2.8-1.2-4-1.4c-1.2-0.3-2.3-0.4-3.4-0.4c-1.1,0.1-2.3,0.2-3.6,0.5c-0.6,0.1-1.3,0.3-2,0.5
-							C154.6,55.5,153.9,55.7,153.1,55.8z"></path>
+                    c1.4,1,2.4,2.4,2.6,4.1c-1.5-0.7-2.8-1.2-4-1.4c-1.2-0.3-2.3-0.4-3.4-0.4c-1.1,0.1-2.3,0.2-3.6,0.5c-0.6,0.1-1.3,0.3-2,0.5
+                    C154.6,55.5,153.9,55.7,153.1,55.8z"></path>
                                     </g>
                                     <g id="right_x5F_eyebrow">
-                                        <path class="st5" d="M188.6,55.7c-1.2-0.8-2.2-1.3-3.1-1.5c-0.9-0.2-1.6-0.1-2.6,0h-0.3l-0.4,0.1l-0.7,0.2
-							c-0.5,0.2-1,0.3-1.6,0.4c-0.6,0.2-1.1,0.3-1.8,0.5c-0.6,0.1-1.3,0.3-2,0.3c0.2-0.7,0.6-1.3,1-1.9c0.4-0.6,0.9-1,1.4-1.5
-							s1.1-0.8,1.7-1.2c0.3-0.2,0.7-0.3,1-0.4l0.5-0.2l0.6-0.1c1.5-0.3,3.4,0,4.6,1.1C188.2,52.7,188.8,54.3,188.6,55.7z">
+                                        <path class="st5"
+                                            d="M188.6,55.7c-1.2-0.8-2.2-1.3-3.1-1.5c-0.9-0.2-1.6-0.1-2.6,0h-0.3l-0.4,0.1l-0.7,0.2
+                    c-0.5,0.2-1,0.3-1.6,0.4c-0.6,0.2-1.1,0.3-1.8,0.5c-0.6,0.1-1.3,0.3-2,0.3c0.2-0.7,0.6-1.3,1-1.9c0.4-0.6,0.9-1,1.4-1.5
+                    s1.1-0.8,1.7-1.2c0.3-0.2,0.7-0.3,1-0.4l0.5-0.2l0.6-0.1c1.5-0.3,3.4,0,4.6,1.1C188.2,52.7,188.8,54.3,188.6,55.7z">
                                         </path>
                                     </g>
                                 </g>
                                 <path id="mouth" class="st5" d="M159.1,79.6c0,0,0.3,3.2,2.5,5.8c0.3,0.4,0.7,0.8,1.1,1.1c1.9,1.6,4.7,2.7,9.1,2.1
-					c0.5-0.1,0.9-0.2,1.3-0.4c0.4-0.2,0.9-0.4,1.2-0.6c3.4-2.1,3.9-6.4,3.9-6.4s-0.7,0.2-1.8,0.4c-2.8,0.6-8.5,1.1-14.8-1.1
-					C160.7,80.3,159.9,80,159.1,79.6z"></path>
+            c0.5-0.1,0.9-0.2,1.3-0.4c0.4-0.2,0.9-0.4,1.2-0.6c3.4-2.1,3.9-6.4,3.9-6.4s-0.7,0.2-1.8,0.4c-2.8,0.6-8.5,1.1-14.8-1.1
+            C160.7,80.3,159.9,80,159.1,79.6z"></path>
                                 <path id="tongue" class="st6" d="M162.7,86.5c1.9,1.6,4.7,2.7,9.1,2.1c0.5-0.1,0.9-0.2,1.3-0.4c-0.3-1.5-2.9-2.7-6-2.7
-					C165.3,85.5,163.8,85.9,162.7,86.5z"></path>
+            C165.3,85.5,163.8,85.9,162.7,86.5z"></path>
                                 <path id="thoot" class="st7" d="M161.6,80.6c0,0.7,0.4,1.6,1.7,1.9c2.5,0.5,8.6,1.4,12.4,0.4c0,0,0.5-0.4,0.7-1.2
-					C173.6,82.3,167.8,82.9,161.6,80.6z"></path>
+            C173.6,82.3,167.8,82.9,161.6,80.6z"></path>
                                 <path id="eye_x5F_right" class="st5" d="M186,63.8c-1.2-0.5-2.1-0.9-3.2-0.9c-1-0.1-2.1,0.1-3.3,0.4c0.3-0.6,0.9-1,1.4-1.3
-					c0.6-0.3,1.3-0.4,2-0.3C184.2,61.7,185.5,62.5,186,63.8z"></path>
+            c0.6-0.3,1.3-0.4,2-0.3C184.2,61.7,185.5,62.5,186,63.8z"></path>
                                 <path id="eye_x5F_left" class="st5" d="M158.4,62.6c1-1.4,2.9-2.3,4.7-2.1c0.9,0.1,1.8,0.3,2.6,0.8s1.4,1.1,1.9,1.9
-					c-0.8-0.4-1.5-0.8-2.3-1c-0.8-0.3-1.5-0.4-2.3-0.5s-1.5,0-2.3,0.2C160,62,159.2,62.3,158.4,62.6z"></path>
+            c-0.8-0.4-1.5-0.8-2.3-1c-0.8-0.3-1.5-0.4-2.3-0.5s-1.5,0-2.3,0.2C160,62,159.2,62.3,158.4,62.6z"></path>
                             </g>
                             <path id="hair_x5F_left" class="st5" d="M171.3,32.2c0.1-1.7-0.1-3.7-1.1-5.7c-4.5-8.2-21.3-6.8-29.6-5.2
-				C107,27.8,120.4,92,120.4,92c-21.2,9.9-11.9,28.2-11.9,28.2c1.5-1.5,4-3.4,7.4-3.9c4.6-0.7,7.1,1.7,12.1,1.9
-				c3.9,0.2,8.2-1.4,11.1-2.9c14.7-7.8-1-32.5,5.5-46.7c-0.1,1.2-0.1,2.4-0.2,3.7c-0.1,3.5,0.6,6.4,1.1,8.3
-				c-0.2-2.1-0.6-9.3,4.2-15.8c1.9-2.5,3.9-4.1,5.7-5.2c0.3-0.2,0.6-0.3,0.9-0.5c0.1-0.1,0.2-0.1,0.3-0.2l0,0
-				C173.4,48.2,171.3,32.2,171.3,32.2z"></path>
+        C107,27.8,120.4,92,120.4,92c-21.2,9.9-11.9,28.2-11.9,28.2c1.5-1.5,4-3.4,7.4-3.9c4.6-0.7,7.1,1.7,12.1,1.9
+        c3.9,0.2,8.2-1.4,11.1-2.9c14.7-7.8-1-32.5,5.5-46.7c-0.1,1.2-0.1,2.4-0.2,3.7c-0.1,3.5,0.6,6.4,1.1,8.3
+        c-0.2-2.1-0.6-9.3,4.2-15.8c1.9-2.5,3.9-4.1,5.7-5.2c0.3-0.2,0.6-0.3,0.9-0.5c0.1-0.1,0.2-0.1,0.3-0.2l0,0
+        C173.4,48.2,171.3,32.2,171.3,32.2z"></path>
 
                             <ellipse id="left_x5F_cheek_2_"
                                 transform="matrix(8.249854e-02 -0.9966 0.9966 8.249854e-02 79.3047 221.9763)"
                                 class="st8" cx="160.2" cy="67.9" rx="1.3" ry="3.7"></ellipse>
                             <path id="right_x5F_cheeck" class="st8" d="M187.3,69.9L187.3,69.9c-0.6,0.1-1.3,0.2-2.1,0.1c-1.6-0.1-2.9-0.7-2.9-1.3
-				c0.1-0.6,1.4-0.9,3.1-0.8c0.6,0.1,1.2,0.2,1.7,0.3C187.1,68.8,187.2,69.3,187.3,69.9z"></path>
+        c0.1-0.6,1.4-0.9,3.1-0.8c0.6,0.1,1.2,0.2,1.7,0.3C187.1,68.8,187.2,69.3,187.3,69.9z"></path>
                         </g>
                         <g id="left_x5F_arm_2_">
                             <path class="st3" d="M253.8,129.2c1.8-0.9,3.4-0.4,3.9,0.4c0.4,0.6-0.8,0.8-2.2,2.4c-1.4,1.7-3.4,5.2-3.4,5.2l-2.1-3.8
-				C249.9,133.4,251.6,130.3,253.8,129.2z"></path>
+        C249.9,133.4,251.6,130.3,253.8,129.2z"></path>
                             <path class="st2" d="M252.4,140.8c-0.4,5.4-0.7,9.3-1.9,13.4c-0.2,0.7-0.8,2.7-1.6,5.1c-0.1,0.3-0.2,0.7-0.3,1
-				c-0.4,1.1-0.7,2.1-0.9,2.7c0,0.1-0.1,0.2-0.1,0.3c-3.6-2.6-6.1-3-7.7-2.7c-0.4,0.1-1.6,0.3-2.8-0.2c-1-0.4-1.6-1.2-2-1.8
-				c1.2-1.4,2.1-2.7,2.6-3.6c0.5-1,1.1-2.1,1.3-2.6c0.3-0.7,0.6-1.3,0.8-1.7c-0.1-1-0.3-2-0.4-2.9c-0.4-2.8-0.6-5.5-0.9-8.2
-				c0,0-1.6-2.2-1.8-2.5c-0.2-0.2-0.7-0.4-0.9-0.9c-0.4-1.8,0.7-3.2,0.7-3.2s-0.4-0.9,0-2.1s1.3-2.2,1.3-2.2s-0.5-2.7,0-3.3
-				c0.5-0.6,5.4-3.1,6.4-2.8c1,0.3,4.1,5.2,4.1,5.2s-0.3-2.2-0.8-3.4c-0.5-1.2-0.5-2.7-3.8-4.5c-3.8-2.1-3.8-3.7-3.3-4.3
-				c0.5-0.5,2.9,0.8,4.5,1.6c1.6,0.8,3.1,2.3,5.1,4c2,1.6,1.5,3.1,1.9,4.9c0.5,1.8,0.2,3.6,0.6,4.7
-				C252.8,131.3,252.9,134.4,252.4,140.8z"></path>
+        c-0.4,1.1-0.7,2.1-0.9,2.7c0,0.1-0.1,0.2-0.1,0.3c-3.6-2.6-6.1-3-7.7-2.7c-0.4,0.1-1.6,0.3-2.8-0.2c-1-0.4-1.6-1.2-2-1.8
+        c1.2-1.4,2.1-2.7,2.6-3.6c0.5-1,1.1-2.1,1.3-2.6c0.3-0.7,0.6-1.3,0.8-1.7c-0.1-1-0.3-2-0.4-2.9c-0.4-2.8-0.6-5.5-0.9-8.2
+        c0,0-1.6-2.2-1.8-2.5c-0.2-0.2-0.7-0.4-0.9-0.9c-0.4-1.8,0.7-3.2,0.7-3.2s-0.4-0.9,0-2.1s1.3-2.2,1.3-2.2s-0.5-2.7,0-3.3
+        c0.5-0.6,5.4-3.1,6.4-2.8c1,0.3,4.1,5.2,4.1,5.2s-0.3-2.2-0.8-3.4c-0.5-1.2-0.5-2.7-3.8-4.5c-3.8-2.1-3.8-3.7-3.3-4.3
+        c0.5-0.5,2.9,0.8,4.5,1.6c1.6,0.8,3.1,2.3,5.1,4c2,1.6,1.5,3.1,1.9,4.9c0.5,1.8,0.2,3.6,0.6,4.7
+        C252.8,131.3,252.9,134.4,252.4,140.8z"></path>
                             <path class="st3" d="M237.8,136c0.5,0.1,1.3,2.5,2.2,2.3c0.2-0.1,1.3-0.5,1.3-0.8c0,0-0.9-1.2-1.6-1.7c-0.7-0.5-1.4-1.2-2.1-1.4
-				c-0.9-0.1-2,0.7-1.7,1.6c0.1,0.4,0,0.7,0.6,1.8c0.4,0.8,1.4,2.2,1.9,2.6c0.4,0.3,0.6-0.7,0.7-1.5
-				C239.1,138.6,238.1,136.5,237.8,136z"></path>
+        c-0.9-0.1-2,0.7-1.7,1.6c0.1,0.4,0,0.7,0.6,1.8c0.4,0.8,1.4,2.2,1.9,2.6c0.4,0.3,0.6-0.7,0.7-1.5
+        C239.1,138.6,238.1,136.5,237.8,136z"></path>
                             <path class="st3" d="M243.3,135c0.4,0-1.6-2.7-1.9-3c-0.6-0.7-1.3-1.7-2.1-2.2c-0.9-0.5-2-0.2-2.5,0.7c-0.3,0.7-0.5,1.6-0.2,2.4
-				c0.6-1.1,1.2-1.6,2.4-1C240.4,132.5,243.3,135,243.3,135z"></path>
+        c0.6-1.1,1.2-1.6,2.4-1C240.4,132.5,243.3,135,243.3,135z"></path>
                             <path class="st3" d="M244.9,127.7c-0.4-1.1-0.8-1.4-1.3-2.4c-0.2-0.4-0.4-0.9-0.9-0.9c-0.4,0-1.3,0.4-1.7,0.6
-				c-1.3,0.6-2.9,0.9-3.1,1.1c-0.2,0.2-0.4,1.4,0,2.1c0.3-0.6,1-1.1,1.5-1.2c0.6-0.1,1.2,0.2,1.7,0.4c1,0.5,2,1.4,2.8,2.1
-				c0.9,0.8,2.4,2.6,2.4,2.6C246.5,130.9,245.2,128.4,244.9,127.7z"></path>
+        c-1.3,0.6-2.9,0.9-3.1,1.1c-0.2,0.2-0.4,1.4,0,2.1c0.3-0.6,1-1.1,1.5-1.2c0.6-0.1,1.2,0.2,1.7,0.4c1,0.5,2,1.4,2.8,2.1
+        c0.9,0.8,2.4,2.6,2.4,2.6C246.5,130.9,245.2,128.4,244.9,127.7z"></path>
                             <g>
                                 <path class="st9" d="M240.6,137.4h0.1l0,0H240.6z"></path>
                                 <path class="st3" d="M240.9,151.1c-0.2-0.6-1.9-7.6-0.1-12.6c0.1-0.4,0.5-1.1,0.5-1.1c-3.4,0.5-3,4.1-3,5.6
-					c0.1,2.2,0.6,5.5,1.5,7.6c0.3,0.7,1.2,2.2,2,2.1C241.4,152.4,241.1,151.6,240.9,151.1z"></path>
+            c0.1,2.2,0.6,5.5,1.5,7.6c0.3,0.7,1.2,2.2,2,2.1C241.4,152.4,241.1,151.6,240.9,151.1z"></path>
                             </g>
                             <path id="right_x5F_arm_4_" class="st2" d="M248.9,159.3c-0.1,0.7-0.3,1.5-0.6,2.2c0,0-0.2,0.6-0.6,1.5c-0.1,0.1-0.1,0.3-0.1,0.3
-				c-0.1,0.4-14,34.6-27.3,35.5c-10.5,0.7-24.5-19-29.5-49.2c-1.3-7.7-2.6-15.3-3.9-23c0,0,17.1,2.4,22.2,15.5
-				c7.1,18.2,12.2,34.6,12.2,34.6c7.4-7.6,10.5-11.9,11.9-14.5c0.6-1.2,1.3-2.4,2-3.6c1.2-1.4,2.1-2.7,2.6-3.6
-				c0.5-1,1.1-2.1,1.3-2.6c1.6-1.3,4.5-2.2,6.7-1.2C248.1,152.3,249.6,155.6,248.9,159.3z"></path>
+        c-0.1,0.4-14,34.6-27.3,35.5c-10.5,0.7-24.5-19-29.5-49.2c-1.3-7.7-2.6-15.3-3.9-23c0,0,17.1,2.4,22.2,15.5
+        c7.1,18.2,12.2,34.6,12.2,34.6c7.4-7.6,10.5-11.9,11.9-14.5c0.6-1.2,1.3-2.4,2-3.6c1.2-1.4,2.1-2.7,2.6-3.6
+        c0.5-1,1.1-2.1,1.3-2.6c1.6-1.3,4.5-2.2,6.7-1.2C248.1,152.3,249.6,155.6,248.9,159.3z"></path>
                             <path id="shadow_x5F_right_x5F_arm_2_" class="st3"
                                 d="M221.3,176.7l-3.3,2.8c0,0-1.1-16.2-2.6-20.4L221.3,176.7z"></path>
                         </g>
                         <path id="skirt_2_" class="st10" d="M211.4,267.9H96.7c0.7-2.3,1.5-4.5,2.3-6.4c6.2-15.6,14.1-23.9,23.3-47.3
-			c2.6-6.4,4.5-12.3,6.1-17.2c1.2-3.8,2.1-7.1,2.8-9.8c19.9,1.1,39.9,2.2,59.8,3.3c0.6,2.1,1.2,4.3,1.9,6.5
-			c3.3,11.6,6.5,23.4,9.6,35.5C205.6,244.4,208.6,256.3,211.4,267.9z"></path>
+    c2.6-6.4,4.5-12.3,6.1-17.2c1.2-3.8,2.1-7.1,2.8-9.8c19.9,1.1,39.9,2.2,59.8,3.3c0.6,2.1,1.2,4.3,1.9,6.5
+    c3.3,11.6,6.5,23.4,9.6,35.5C205.6,244.4,208.6,256.3,211.4,267.9z"></path>
                         <path id="back_x5F_left_x5F_arm_2_" class="st3" d="M111.4,188.1c3.9-2.5,6.7-13.2,10.4-37.9c1.2-8,1.7-11.5,1-16.5
-			c-0.3-2.3-1.6-11.8-7-13.6c-3.6-1.2-7.3,0.8-8,1.2c-8,5.2-8.6,16.5-8.5,38.6c0.1,17.5,0.5,28.3,3.4,29.6
-			C106.3,191.3,110.8,188.5,111.4,188.1z"></path>
+    c-0.3-2.3-1.6-11.8-7-13.6c-3.6-1.2-7.3,0.8-8,1.2c-8,5.2-8.6,16.5-8.5,38.6c0.1,17.5,0.5,28.3,3.4,29.6
+    C106.3,191.3,110.8,188.5,111.4,188.1z"></path>
                         <g id="chest_1_">
                             <g id="chest_4_">
                                 <g>
                                     <path class="st11"
                                         d="M99.9,140.4c0-1.8,0.2-12.4,8.6-20.2c7.2-6.6,17.7-8.7,27.4-5.6c3.9,7.3,7.6,9.3,10.4,9.7
-						c3.3,0.4,5.5-1.4,8.2,0.1c3.4,1.9,3.1,6.6,5.1,6.8c1.4,0.1,1.9-2.2,4.1-4.7c4.1-4.4,8.4-2.9,13.1-6.4c1.9-1.4,4.3-4,5.8-8.9
-						c3.1-0.2,7.4-0.1,12.3,1.5c0,0,0.5,0.1,0.9,0.3c14.4,5.4,18.3,23.5,18.3,23.5c-4.4,5.7-10.2,10-15.1,12.9
-						c2.7,20.4-8,41.1-8,41.1c-8,1.5-18,2.7-29.6,2.5c-12.2-0.2-22.6-1.9-30.8-3.9c-2.9-11.9-5.8-23.8-8.7-35.7L99.9,140.4z"></path>
+                c3.3,0.4,5.5-1.4,8.2,0.1c3.4,1.9,3.1,6.6,5.1,6.8c1.4,0.1,1.9-2.2,4.1-4.7c4.1-4.4,8.4-2.9,13.1-6.4c1.9-1.4,4.3-4,5.8-8.9
+                c3.1-0.2,7.4-0.1,12.3,1.5c0,0,0.5,0.1,0.9,0.3c14.4,5.4,18.3,23.5,18.3,23.5c-4.4,5.7-10.2,10-15.1,12.9
+                c2.7,20.4-8,41.1-8,41.1c-8,1.5-18,2.7-29.6,2.5c-12.2-0.2-22.6-1.9-30.8-3.9c-2.9-11.9-5.8-23.8-8.7-35.7L99.9,140.4z">
+                                    </path>
                                 </g>
                             </g>
                             <g id="shadow_x5F_chest_2_" class="st12">
                                 <g>
                                     <path class="st13"
                                         d="M141.3,169.8c9.2,4,19.3,6.2,29.2,7.7c8.2,1.2,16.8,2.5,25.1,1.7c-2.2,6.8-4.5,11.3-4.5,11.3
-						c-10.4,1.9-23.9,3.3-39.5,2c-7.8-0.7-14.8-1.9-20.9-3.3c-2.7-11.2-5.4-22.4-8.1-33.7C126.8,162.2,134,166.6,141.3,169.8z"></path>
+                c-10.4,1.9-23.9,3.3-39.5,2c-7.8-0.7-14.8-1.9-20.9-3.3c-2.7-11.2-5.4-22.4-8.1-33.7C126.8,162.2,134,166.6,141.3,169.8z">
+                                    </path>
                                 </g>
                             </g>
                         </g>
                         <g id="right_x5F_arm_1_">
                             <path class="st2" d="M111.6,147.8c1.3,8.4,2.2,8.5,3.4,18c0.8,6.5,0.2,10.7-1.2,15.1c-0.9,2.9-1.2,6-4.9,8
-				c-0.6,0.3-3.4,2.3-7.5,0.7c-0.6-0.2-5.8-4.1-7.5-15.3c-0.9-6.1-0.6-21.9,2.7-35.2c4-16.7,3.4-14,4.9-19
-				c1.5-4.9,1.9-13.4,7.3-14.6c1.8-0.4,3.7,1,4.6,2.4c1.2,1.9-0.2,4-0.7,7.3C110.3,128.8,110.3,139.2,111.6,147.8z">
+        c-0.6,0.3-3.4,2.3-7.5,0.7c-0.6-0.2-5.8-4.1-7.5-15.3c-0.9-6.1-0.6-21.9,2.7-35.2c4-16.7,3.4-14,4.9-19
+        c1.5-4.9,1.9-13.4,7.3-14.6c1.8-0.4,3.7,1,4.6,2.4c1.2,1.9-0.2,4-0.7,7.3C110.3,128.8,110.3,139.2,111.6,147.8z">
                             </path>
                             <path class="st3" d="M114.5,93.9c0.7-2.5,2.1-4.4,2.7-6.9c0-0.2,0.1-0.8,0.6-1.2c1.2-0.9,3.9-1.2,6.7-2.7
-				c0.3-0.2,2.2-1.4,2.7-1.1c0.4,0.3,0.8,0.9,0.7,1.4c-0.1,0.3,0,1.5-1.5,2.5c-2.5,1.6-5.4,2.3-5.7,2.6c-0.6,0.5-0.1,2.4-0.1,3.2
-				c-0.1,6-3.3,7.1-3,9.7c0.1,0.5,0.3,1.4,0.9,1.6c0.9,0.4,1.6,0.1,4.3-1c0.5-0.2,6.1-2.5,7.3-0.9c0.4,0.6-0.1,1.6-0.7,2
-				c-0.5,0.3-2.3,1.3-4.1,2c-2.6,1.1-3.1,1.3-4.1,2c-1,0.8-0.8,0.4-1.9,1.7c-1.6,1.9-3.7,2.8-4.8,3.2c-1.9,0.7-4.5,0.6-5.8-0.5
-				c-1.2-1.1-0.5-2.4,0.4-5.6C111.2,99.3,113.1,99.3,114.5,93.9z"></path>
+        c0.3-0.2,2.2-1.4,2.7-1.1c0.4,0.3,0.8,0.9,0.7,1.4c-0.1,0.3,0,1.5-1.5,2.5c-2.5,1.6-5.4,2.3-5.7,2.6c-0.6,0.5-0.1,2.4-0.1,3.2
+        c-0.1,6-3.3,7.1-3,9.7c0.1,0.5,0.3,1.4,0.9,1.6c0.9,0.4,1.6,0.1,4.3-1c0.5-0.2,6.1-2.5,7.3-0.9c0.4,0.6-0.1,1.6-0.7,2
+        c-0.5,0.3-2.3,1.3-4.1,2c-2.6,1.1-3.1,1.3-4.1,2c-1,0.8-0.8,0.4-1.9,1.7c-1.6,1.9-3.7,2.8-4.8,3.2c-1.9,0.7-4.5,0.6-5.8-0.5
+        c-1.2-1.1-0.5-2.4,0.4-5.6C111.2,99.3,113.1,99.3,114.5,93.9z"></path>
                             <path class="st2" d="M126.2,96.5c0.3,0,0.8-0.1,1.4,0c0.6,0.1,1,0.4,1.9,0.8c2.1,1.2,1.9,0.9,2.3,1.2c1,0.8,0.8,1.2,1.9,2.1
-				c0.5,0.4,1.9,1.1,3.3,0.2c0.5-0.3,0.2-1.1,0.2-1.2c-0.1-0.4-0.3-0.6-1.2-1.7c-0.7-0.8-0.9-1.1-0.8-1.2c0.1-0.1,1.2,0.2,1.2-0.8
-				c0-0.5-0.3-0.9-0.8-1.4c-1.7-1.9-1.9-2.5-3.1-3.3c-0.2-0.1-0.7-0.5-1.9-0.8c-3.1-0.8-4.8-2.1-6.2-1.7c-1.4,0.4-10.4,3.2-11,3.5
-				c-1.1,0.6-1.5,1.7-1.7,2.1c-1.4,3.5-2.6,4.4-5.8,11.6c-1.3,2.8-1.8,3.9-1.3,5c0.7,1.3,2.4,1.6,3.3,1.8c0.4,0.1,2.9,0.6,5-0.8
-				c1-0.7,1.5-1.6,2.5-3.3c1.7-3.1,1.7-4.7,3.1-5.4c0.1-0.1,1-0.5,2.3-0.8c0.4-0.1,0.7-0.2,0.8-0.2c1.7-0.2,4.1,0.5,4.4,0.6
-				c0.4,0.1,1.5,1.3,4.8,3.1c0.4,0.2,2.3,1.2,3.1,0.4c0.4-0.4,0.2-1,0.2-1c-0.2-0.7-1-1.1-1.7-1.4c-2-1.1-1.6-2-3.9-3.5
-				c-0.7-0.5-1.4-0.9-2.3-1.2c-3.1-1.2-5.2-0.2-5.4-1C120.6,97.4,122.9,97,126.2,96.5z"></path>
+        c0.5,0.4,1.9,1.1,3.3,0.2c0.5-0.3,0.2-1.1,0.2-1.2c-0.1-0.4-0.3-0.6-1.2-1.7c-0.7-0.8-0.9-1.1-0.8-1.2c0.1-0.1,1.2,0.2,1.2-0.8
+        c0-0.5-0.3-0.9-0.8-1.4c-1.7-1.9-1.9-2.5-3.1-3.3c-0.2-0.1-0.7-0.5-1.9-0.8c-3.1-0.8-4.8-2.1-6.2-1.7c-1.4,0.4-10.4,3.2-11,3.5
+        c-1.1,0.6-1.5,1.7-1.7,2.1c-1.4,3.5-2.6,4.4-5.8,11.6c-1.3,2.8-1.8,3.9-1.3,5c0.7,1.3,2.4,1.6,3.3,1.8c0.4,0.1,2.9,0.6,5-0.8
+        c1-0.7,1.5-1.6,2.5-3.3c1.7-3.1,1.7-4.7,3.1-5.4c0.1-0.1,1-0.5,2.3-0.8c0.4-0.1,0.7-0.2,0.8-0.2c1.7-0.2,4.1,0.5,4.4,0.6
+        c0.4,0.1,1.5,1.3,4.8,3.1c0.4,0.2,2.3,1.2,3.1,0.4c0.4-0.4,0.2-1,0.2-1c-0.2-0.7-1-1.1-1.7-1.4c-2-1.1-1.6-2-3.9-3.5
+        c-0.7-0.5-1.4-0.9-2.3-1.2c-3.1-1.2-5.2-0.2-5.4-1C120.6,97.4,122.9,97,126.2,96.5z"></path>
                         </g>
                     </g>
                     <g id="white-shirt">
                         <path id="shirt" class="st7" d="M191,190.5c-5.2,1-11.1,1.8-17.6,2.2c-0.7-9.1-1.3-18.1-2-27.2v-18.8l1.1-19.1l-4-8
-			c-1.2,0.6-2.6,1.4-4.1,2.7c-0.7,0.6-1.3,1.2-1.8,1.8c-0.4,0.4-1,0.9-1.5,1.6c-0.8,1.1-1.3,2.2-1.5,3c-0.3-0.8-0.9-2-2-3.1
-			c-0.6-0.6-1.2-1.1-1.7-1.4c-1.5-1.8-2.9-3.5-4.4-5.3l-3.3,7.5l4.9,22.1l0.8,18.6c-1.3,8.4-2.5,16.8-3.8,25.2c0.1,0,0.2,0,0.2,0
-			l0,0c-7.2-0.7-13.8-1.9-19.6-3.2c-1.7,5.5-3.3,11-5,16.5c8.3,2.1,19.3,4.1,32.1,4.3c15.4,0.2,28.2-2.2,37.5-4.7
-			C193.8,200.3,192.4,195.4,191,190.5z"></path>
+    c-1.2,0.6-2.6,1.4-4.1,2.7c-0.7,0.6-1.3,1.2-1.8,1.8c-0.4,0.4-1,0.9-1.5,1.6c-0.8,1.1-1.3,2.2-1.5,3c-0.3-0.8-0.9-2-2-3.1
+    c-0.6-0.6-1.2-1.1-1.7-1.4c-1.5-1.8-2.9-3.5-4.4-5.3l-3.3,7.5l4.9,22.1l0.8,18.6c-1.3,8.4-2.5,16.8-3.8,25.2c0.1,0,0.2,0,0.2,0
+    l0,0c-7.2-0.7-13.8-1.9-19.6-3.2c-1.7,5.5-3.3,11-5,16.5c8.3,2.1,19.3,4.1,32.1,4.3c15.4,0.2,28.2-2.2,37.5-4.7
+    C193.8,200.3,192.4,195.4,191,190.5z"></path>
                         <path id="left_x5F_shadow" class="st14" d="M135.7,107.1l4.3,6.8l3.7-0.4l-0.2-0.6c0,0,0.7-1.3,1.4-2.9c0.6-1.1,0.7-4.2,0.8-5.9
-			L135.7,107.1z"></path>
+    L135.7,107.1z"></path>
                         <path id="shadow_x5F_right" class="st14"
                             d="M179,104.9l-12.9-2.1c0,0,1.2,5.4,3.9,7.3c2,1.4,2.9,1.4,2.9,1.4L179,104.9z"></path>
                         <path id="right_x5F_collar" class="st7" d="M184.8,109.7c-1.9-1.6-3.9-3.2-5.8-4.8c-4.4,4.8-8.8,9.5-13.1,14.2l-1.9,9.5l4.5-4.5
-			l4.2,7.9C176.7,124.6,180.8,117.1,184.8,109.7z"></path>
+    l4.2,7.9C176.7,124.6,180.8,117.1,184.8,109.7z"></path>
                         <path id="left_x5F_collar" class="st7" d="M135.6,107l-6.1,4.2l17.8,20.8c1.2-3,2.5-6,3.8-8.9c2.2,2,4.5,3.9,6.7,5.9
-			c-2.1-3.4-4.2-6.8-6.3-10.1C146.2,114.9,140.9,111,135.6,107z"></path>
+    c-2.1-3.4-4.2-6.8-6.3-10.1C146.2,114.9,140.9,111,135.6,107z"></path>
                         <path id="front_x5F_left_x5F_collar" class="st14" d="M147.4,132c1.4-4.4,2.8-8.8,4.1-13.1c2,2.2,4.1,4.5,6.1,6.7
-			c-1.6-0.8-3.2-1.6-4.8-2.4c-0.6,0.8-1.2,1.7-1.9,2.6C149.5,128,148.3,130.1,147.4,132z"></path>
+    c-1.6-0.8-3.2-1.6-4.8-2.4c-0.6,0.8-1.2,1.7-1.9,2.6C149.5,128,148.3,130.1,147.4,132z"></path>
                         <path id="front_x5F_right_x5F_collar" class="st14" d="M172.7,132c-2.3-4.3-4.6-8.5-6.9-12.8c-1.6,2.1-3.1,4.3-4.7,6.4
-			c1.5-0.6,2.9-1.3,4.4-2c1,0.7,2.1,1.6,3.1,2.8C170.5,128.5,171.8,130.4,172.7,132z"></path>
+    c1.5-0.6,2.9-1.3,4.4-2c1,0.7,2.1,1.6,3.1,2.8C170.5,128.5,171.8,130.4,172.7,132z"></path>
                     </g>
                     <g id="headphone_2_">
                         <path class="st7" d="M158.6,21.9c5.4-0.1,8.1,1.2,9.2,1.9l0,0l-0.1-0.1c-0.5-0.5-3.6-3.1-10.5-3.1c-16.4-0.2-28.7,13-30.1,30.8
-			c-0.9,0.1-1.8,0.5-2.3,1.2c-2.5,3.3-2.9,8.6-2.9,13.2c0,4.2,1.8,12.4,3.4,13.6c1.9,1.4,4.7,0.8,5.1,0.6c0.5-0.2,0.9-0.5,1.3-0.9
-			c3.3,7.9,9.8,13.1,17.1,13.1c1.2,0,2.3-0.1,3.3-0.4c0.7,0.6,1.8,1.1,3.2,1.1c2.1,0,3.8-1,3.8-2.3s-1.7-2.3-3.8-2.3s-3.8,1-3.8,2.3
-			v0.1c-0.6,0.1-1.2,0.1-1.8,0.1c-7.1,0-13.3-6.8-15.8-15.8c0.8-2.4,1.2-5.5,1.2-9.2c0-7.3-1.7-12.9-4.2-14
-			C132.5,35.9,144.9,22.1,158.6,21.9z"></path>
+    c-0.9,0.1-1.8,0.5-2.3,1.2c-2.5,3.3-2.9,8.6-2.9,13.2c0,4.2,1.8,12.4,3.4,13.6c1.9,1.4,4.7,0.8,5.1,0.6c0.5-0.2,0.9-0.5,1.3-0.9
+    c3.3,7.9,9.8,13.1,17.1,13.1c1.2,0,2.3-0.1,3.3-0.4c0.7,0.6,1.8,1.1,3.2,1.1c2.1,0,3.8-1,3.8-2.3s-1.7-2.3-3.8-2.3s-3.8,1-3.8,2.3
+    v0.1c-0.6,0.1-1.2,0.1-1.8,0.1c-7.1,0-13.3-6.8-15.8-15.8c0.8-2.4,1.2-5.5,1.2-9.2c0-7.3-1.7-12.9-4.2-14
+    C132.5,35.9,144.9,22.1,158.6,21.9z"></path>
                         <ellipse class="st15" cx="127.2" cy="65.8" rx="4.1" ry="12.4"></ellipse>
                     </g>
                 </g>
             </svg>
         </a>
 
+    </div>
+    <footer>
+        <div class="p-3 py-7" style="background-color: #000000;">
+
+            <div class="flex flex-wrap gap-4 items-center justify-center list-none py-7 px-1">
+                <h1 class="text-5xl text-gray-100 font-bold"
+                    style="font-family: 'Bungee Shade', sans-serif; font-family: 'Lobster Two', sans-serif;">
+                    Fresh-qrmenu</h1>
+            </div>
+            <div class="flex flex-wrap gap-4 items-center justify-center list-none py-5 px-1">
+                <div id="demosx" class="w-96 md:w-80 p-3 text-lg text-gray-100">
+                    <h1 class="text-center font-bold text-2xl">Demos</h1>
+                    <li><a class="hover:text-blue-700" href="#">Demo 1 Cafe</a></li>
+                    <li><a class="hover:text-blue-700" href="#">Demo 2 Resturant</a></li>
+                    <li><a class="hover:text-blue-700" href="#">Demo 3 Resturant</a></li>
+                    <li><a class="hover:text-blue-700" href="#">Demo 4 Resturant</a></li>
+                    <li><a class="hover:text-blue-700" href="#">Demo 5 Resturant</a></li>
+                    <li><a class="hover:text-blue-700" href="#">Demo 6 Resturant</a></li>
+                    <li><a class="hover:text-blue-700" href="#">Demo 7 Resturant</a></li>
+                    <li><a class="hover:text-blue-700" href="#">Demo 8 Resturant</a></li>
+                    <li><a class="hover:text-blue-700" href="#">Demo 9 Resturant</a></li>
+                    <li><a class="hover:text-blue-700" href="#">Demo 10 Resturant</a></li>
+                </div>
+                <div id="demosx" class="w-96 md:w-80 p-3 text-lg text-gray-100">
+                    <h1 class="text-center font-bold text-2xl">About</h1>
+                    <li><a class="hover:text-blue-700" href="#">Agreement</a></li>
+                    <li><a class="hover:text-blue-700" href="#">Why were we founded?</a></li>
+                    <li><a class="hover:text-blue-700" href="#">Processing fee</a></li>
+                    <li><a class="hover:text-blue-700" href="#">Payment methods?</a></li>
+                </div>
+                <div class="w-96 md:w-80 p-3 text-lg text-gray-100">
+                    <h1 class="text-center font-bold text-2xl">Contact Social Media</h1>
+                    <div class="flex gap-3 mt-5 text-3xl md:pb-0 pb-10">
+                        <li><a class="text-white p-2 px-4 rounded-full hover:bg-green-500  bg-green-700" href="#"><i
+                                    class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a class="text-white p-2 px-4 rounded-full   hover:bg-red-500  bg-red-700" href="#"><i
+                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li><a class="text-white p-2 px-4 rounded-full  hover:bg-blue-500  bg-blue-700" href="#"><i
+                                    class="fa-brands fa-telegram"></i></a></li>
+                        <li><a class="text-white p-2 px-4 rounded-full  hover:bg-gray-500  bg-gray-700" href="#"><i
+                                    class="fa-brands fa-x-twitter"></i></a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/837be0c474.js" crossorigin="anonymous"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var selamElement = document.getElementById('');
-        var joyButton = document.getElementById('');
-
-        joyButton.addEventListener('click', function () {
-            // Eğer görünürlük durumu "none" ise "block" yap, aksi halde "none" yap.
-            selamElement.style.display = (selamElement.style.display === 'block') ? 'none' : 'block';
-        });
-    });
-
-    document.getElementById('bar').addEventListener('click', function () {
-  var sal = document.getElementById('sal');
-  sal.style.display = (sal.style.display === 'none' || sal.style.display === '') ? 'block' : 'none';
-});
-
-
-</script>
+<script src="/js/script.js"></script>
+<script src="/js/wow.js">// WOW wow animate__animated animate__bounceInUp </script>
 
 </html>
